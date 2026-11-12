@@ -1,0 +1,6 @@
+{
+  "silenceMinutes": 30,
+  "collapseConsecutive": true,
+  "removal": "drop-to-null",
+  "seed": 81
+}

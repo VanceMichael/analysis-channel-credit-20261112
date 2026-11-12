@@ -1,0 +1,869 @@
+{
+  "version": 1,
+  "records": [
+    {
+      "user": "u0",
+      "session": "s0",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0000"
+    },
+    {
+      "user": "u0",
+      "session": "s0",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0001"
+    },
+    {
+      "user": "u0",
+      "session": "s0",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0002"
+    },
+    {
+      "user": "u0",
+      "session": "s1",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0003"
+    },
+    {
+      "user": "u0",
+      "session": "s1",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0004"
+    },
+    {
+      "user": "u0",
+      "session": "s1",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0005"
+    },
+    {
+      "user": "u1",
+      "session": "s2",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0006"
+    },
+    {
+      "user": "u1",
+      "session": "s2",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0007"
+    },
+    {
+      "user": "u1",
+      "session": "s2",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0008"
+    },
+    {
+      "user": "u1",
+      "session": "s3",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0009"
+    },
+    {
+      "user": "u1",
+      "session": "s3",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0010"
+    },
+    {
+      "user": "u1",
+      "session": "s3",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0011"
+    },
+    {
+      "user": "u2",
+      "session": "s4",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0012"
+    },
+    {
+      "user": "u2",
+      "session": "s4",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0013"
+    },
+    {
+      "user": "u2",
+      "session": "s4",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0014"
+    },
+    {
+      "user": "u2",
+      "session": "s5",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0015"
+    },
+    {
+      "user": "u2",
+      "session": "s5",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0016"
+    },
+    {
+      "user": "u2",
+      "session": "s5",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0017"
+    },
+    {
+      "user": "u3",
+      "session": "s6",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0018"
+    },
+    {
+      "user": "u3",
+      "session": "s6",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0019"
+    },
+    {
+      "user": "u3",
+      "session": "s6",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0020"
+    },
+    {
+      "user": "u3",
+      "session": "s7",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0021"
+    },
+    {
+      "user": "u3",
+      "session": "s7",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0022"
+    },
+    {
+      "user": "u3",
+      "session": "s7",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0023"
+    },
+    {
+      "user": "u4",
+      "session": "s8",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0024"
+    },
+    {
+      "user": "u4",
+      "session": "s8",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0025"
+    },
+    {
+      "user": "u4",
+      "session": "s8",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0026"
+    },
+    {
+      "user": "u4",
+      "session": "s9",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0027"
+    },
+    {
+      "user": "u4",
+      "session": "s9",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0028"
+    },
+    {
+      "user": "u4",
+      "session": "s9",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0029"
+    },
+    {
+      "user": "u5",
+      "session": "s10",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0030"
+    },
+    {
+      "user": "u5",
+      "session": "s10",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0031"
+    },
+    {
+      "user": "u5",
+      "session": "s10",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0032"
+    },
+    {
+      "user": "u5",
+      "session": "s11",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0033"
+    },
+    {
+      "user": "u5",
+      "session": "s11",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0034"
+    },
+    {
+      "user": "u5",
+      "session": "s11",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0035"
+    },
+    {
+      "user": "u6",
+      "session": "s12",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0036"
+    },
+    {
+      "user": "u6",
+      "session": "s12",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0037"
+    },
+    {
+      "user": "u6",
+      "session": "s12",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0038"
+    },
+    {
+      "user": "u6",
+      "session": "s13",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0039"
+    },
+    {
+      "user": "u6",
+      "session": "s13",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0040"
+    },
+    {
+      "user": "u6",
+      "session": "s13",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0041"
+    },
+    {
+      "user": "u7",
+      "session": "s14",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0042"
+    },
+    {
+      "user": "u7",
+      "session": "s14",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0043"
+    },
+    {
+      "user": "u7",
+      "session": "s14",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0044"
+    },
+    {
+      "user": "u7",
+      "session": "s15",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0045"
+    },
+    {
+      "user": "u7",
+      "session": "s15",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0046"
+    },
+    {
+      "user": "u7",
+      "session": "s15",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0047"
+    },
+    {
+      "user": "u8",
+      "session": "s16",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0048"
+    },
+    {
+      "user": "u8",
+      "session": "s16",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0049"
+    },
+    {
+      "user": "u8",
+      "session": "s16",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0050"
+    },
+    {
+      "user": "u8",
+      "session": "s17",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0051"
+    },
+    {
+      "user": "u8",
+      "session": "s17",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0052"
+    },
+    {
+      "user": "u8",
+      "session": "s17",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0053"
+    },
+    {
+      "user": "u9",
+      "session": "s18",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0054"
+    },
+    {
+      "user": "u9",
+      "session": "s18",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0055"
+    },
+    {
+      "user": "u9",
+      "session": "s18",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0056"
+    },
+    {
+      "user": "u9",
+      "session": "s19",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0057"
+    },
+    {
+      "user": "u9",
+      "session": "s19",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0058"
+    },
+    {
+      "user": "u9",
+      "session": "s19",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0059"
+    },
+    {
+      "user": "u10",
+      "session": "s20",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0060"
+    },
+    {
+      "user": "u10",
+      "session": "s20",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0061"
+    },
+    {
+      "user": "u10",
+      "session": "s20",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0062"
+    },
+    {
+      "user": "u10",
+      "session": "s21",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0063"
+    },
+    {
+      "user": "u10",
+      "session": "s21",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0064"
+    },
+    {
+      "user": "u10",
+      "session": "s21",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0065"
+    },
+    {
+      "user": "u11",
+      "session": "s22",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0066"
+    },
+    {
+      "user": "u11",
+      "session": "s22",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0067"
+    },
+    {
+      "user": "u11",
+      "session": "s22",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0068"
+    },
+    {
+      "user": "u11",
+      "session": "s23",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0069"
+    },
+    {
+      "user": "u11",
+      "session": "s23",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0070"
+    },
+    {
+      "user": "u11",
+      "session": "s23",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0071"
+    },
+    {
+      "user": "u12",
+      "session": "s24",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0072"
+    },
+    {
+      "user": "u12",
+      "session": "s24",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0073"
+    },
+    {
+      "user": "u12",
+      "session": "s24",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0074"
+    },
+    {
+      "user": "u12",
+      "session": "s25",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0075"
+    },
+    {
+      "user": "u12",
+      "session": "s25",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0076"
+    },
+    {
+      "user": "u12",
+      "session": "s25",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0077"
+    },
+    {
+      "user": "u13",
+      "session": "s26",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0078"
+    },
+    {
+      "user": "u13",
+      "session": "s26",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0079"
+    },
+    {
+      "user": "u13",
+      "session": "s26",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0080"
+    },
+    {
+      "user": "u13",
+      "session": "s27",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0081"
+    },
+    {
+      "user": "u13",
+      "session": "s27",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0082"
+    },
+    {
+      "user": "u13",
+      "session": "s27",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0083"
+    },
+    {
+      "user": "u14",
+      "session": "s28",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0084"
+    },
+    {
+      "user": "u14",
+      "session": "s28",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0085"
+    },
+    {
+      "user": "u14",
+      "session": "s28",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0086"
+    },
+    {
+      "user": "u14",
+      "session": "s29",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 3,
+      "id": "r0087"
+    },
+    {
+      "user": "u14",
+      "session": "s29",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 3,
+      "id": "r0088"
+    },
+    {
+      "user": "u14",
+      "session": "s29",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 3,
+      "id": "r0089"
+    },
+    {
+      "user": "u15",
+      "session": "s30",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 1,
+      "id": "r0090"
+    },
+    {
+      "user": "u15",
+      "session": "s30",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 1,
+      "id": "r0091"
+    },
+    {
+      "user": "u15",
+      "session": "s30",
+      "minute": 10,
+      "channel": "direct",
+      "converted": false,
+      "weight": 1,
+      "id": "r0092"
+    },
+    {
+      "user": "u15",
+      "session": "s31",
+      "minute": 0,
+      "channel": "content",
+      "converted": false,
+      "weight": 2,
+      "id": "r0093"
+    },
+    {
+      "user": "u15",
+      "session": "s31",
+      "minute": 5,
+      "channel": "search",
+      "converted": false,
+      "weight": 2,
+      "id": "r0094"
+    },
+    {
+      "user": "u15",
+      "session": "s31",
+      "minute": 10,
+      "channel": "direct",
+      "converted": true,
+      "weight": 2,
+      "id": "r0095"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "key": "content",
+    "count": 32,
+    "sum": 63
+  },
+  {
+    "key": "direct",
+    "count": 32,
+    "sum": 63
+  },
+  {
+    "key": "search",
+    "count": 32,
+    "sum": 63
+  }
+]
