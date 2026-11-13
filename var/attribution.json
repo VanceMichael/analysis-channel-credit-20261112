@@ -1,0 +1,730 @@
+{
+  "bootstrap": {
+    "absorption": {
+      "median": 0.8285714285714286,
+      "p5": 0.775,
+      "p95": 0.868421052631579,
+      "samples": 200
+    },
+    "channels": {
+      "content": {
+        "effect": {
+          "median": 0.8285714285714286,
+          "p5": 0.775,
+          "p95": 0.868421052631579,
+          "samples": 200
+        },
+        "share": {
+          "median": 0.3333333333333333,
+          "p5": 0.3333333333333333,
+          "p95": 0.33333333333333337,
+          "samples": 200
+        }
+      },
+      "direct": {
+        "effect": {
+          "median": 0.8285714285714286,
+          "p5": 0.775,
+          "p95": 0.868421052631579,
+          "samples": 200
+        },
+        "share": {
+          "median": 0.3333333333333333,
+          "p5": 0.3333333333333333,
+          "p95": 0.33333333333333337,
+          "samples": 200
+        }
+      },
+      "search": {
+        "effect": {
+          "median": 0.8285714285714286,
+          "p5": 0.775,
+          "p95": 0.868421052631579,
+          "samples": 200
+        },
+        "share": {
+          "median": 0.3333333333333333,
+          "p5": 0.3333333333333333,
+          "p95": 0.33333333333333337,
+          "samples": 200
+        }
+      }
+    },
+    "failedIterations": [],
+    "iterations": 200,
+    "method": "user-level-whole-path-resample",
+    "seed": 81,
+    "unit": "user",
+    "validIterations": 200
+  },
+  "inputFingerprint": "16c14a9ef6b495c048a9d8851478629dfa514c29fdebfb709c11e17aaca560eb",
+  "method": "first-order-markov-removal-attribution",
+  "policy": {
+    "bootstrapIterations": 200,
+    "bootstrapSeed": 81,
+    "collapseConsecutive": true,
+    "primaryWindow": 30,
+    "removalRule": "drop-to-null",
+    "removalRuleDefinition": "移除渠道后，所有进入该渠道的概率质量直接计入流失（NULL）吸收态；不跳过该触点，也不把质量重新分配给其他渠道或转化态。",
+    "silenceWindows": [
+      15,
+      30,
+      60
+    ]
+  },
+  "policyFingerprint": "22681347ff3e3ae008192dda51f60830e3aa8dd3bd3f23d64a495cdeb7e5cd4a",
+  "primary": {
+    "absorption": {
+      "byState": {
+        "##START##": {
+          "churn": 0.1746031746031746,
+          "convert": 0.8253968253968254
+        },
+        "content": {
+          "churn": 0.1746031746031746,
+          "convert": 0.8253968253968254
+        },
+        "direct": {
+          "churn": 0.1746031746031746,
+          "convert": 0.8253968253968254
+        },
+        "search": {
+          "churn": 0.1746031746031746,
+          "convert": 0.8253968253968254
+        }
+      },
+      "churn": 0.1746031746031746,
+      "convert": 0.8253968253968254
+    },
+    "channels": [
+      "content",
+      "direct",
+      "search"
+    ],
+    "config": {
+      "collapseConsecutive": true,
+      "removalRule": "drop-to-null",
+      "silenceMinutes": 30
+    },
+    "convertedFrequency": 52,
+    "normalization": {
+      "contributions": {
+        "content": 0.3333333333333333,
+        "direct": 0.3333333333333333,
+        "search": 0.3333333333333333
+      },
+      "reason": null,
+      "totalEffect": 2.4761904761904763
+    },
+    "pathCount": 2,
+    "paths": [
+      {
+        "channels": [
+          "content",
+          "search",
+          "direct"
+        ],
+        "frequency": 52,
+        "outcome": "##CONVERT##"
+      },
+      {
+        "channels": [
+          "content",
+          "search",
+          "direct"
+        ],
+        "frequency": 11,
+        "outcome": "##NULL##"
+      }
+    ],
+    "removalEffects": {
+      "content": {
+        "absorptionAfterRemoval": 0,
+        "effect": 0.8253968253968254,
+        "redirectedToNull": {
+          "##START##": 1
+        }
+      },
+      "direct": {
+        "absorptionAfterRemoval": 0,
+        "effect": 0.8253968253968254,
+        "redirectedToNull": {
+          "search": 1
+        }
+      },
+      "search": {
+        "absorptionAfterRemoval": 0,
+        "effect": 0.8253968253968254,
+        "redirectedToNull": {
+          "content": 1
+        }
+      }
+    },
+    "totalFrequency": 63,
+    "transitionCounts": {
+      "##START##": {
+        "content": 63
+      },
+      "content": {
+        "search": 63
+      },
+      "direct": {
+        "##CONVERT##": 52,
+        "##NULL##": 11
+      },
+      "search": {
+        "direct": 63
+      }
+    },
+    "transitionMatrix": {
+      "##START##": {
+        "##CONVERT##": 0,
+        "##NULL##": 0,
+        "##START##": 0,
+        "content": 1,
+        "direct": 0,
+        "search": 0
+      },
+      "content": {
+        "##CONVERT##": 0,
+        "##NULL##": 0,
+        "##START##": 0,
+        "content": 0,
+        "direct": 0,
+        "search": 1
+      },
+      "direct": {
+        "##CONVERT##": 0.8253968253968254,
+        "##NULL##": 0.1746031746031746,
+        "##START##": 0,
+        "content": 0,
+        "direct": 0,
+        "search": 0
+      },
+      "search": {
+        "##CONVERT##": 0,
+        "##NULL##": 0,
+        "##START##": 0,
+        "content": 0,
+        "direct": 1,
+        "search": 0
+      }
+    },
+    "warnings": []
+  },
+  "scopeNotice": "本结果是路径描述性归因，用于预算讨论，不代表因果投放效果。",
+  "windowComparison": {
+    "channels": [
+      {
+        "channel": "content",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      },
+      {
+        "channel": "direct",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      },
+      {
+        "channel": "search",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      }
+    ],
+    "ranking": [
+      {
+        "channel": "content",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      },
+      {
+        "channel": "direct",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      },
+      {
+        "channel": "search",
+        "maxChange": {
+          "absolute": 0,
+          "delta": 0,
+          "fromWindow": 15,
+          "toWindow": 30
+        },
+        "shareByWindow": {
+          "15": 0.3333333333333333,
+          "30": 0.3333333333333333,
+          "60": 0.3333333333333333
+        }
+      }
+    ],
+    "windows": [
+      15,
+      30,
+      60
+    ]
+  },
+  "windows": [
+    {
+      "absorption": {
+        "byState": {
+          "##START##": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "content": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "direct": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "search": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          }
+        },
+        "churn": 0.1746031746031746,
+        "convert": 0.8253968253968254
+      },
+      "channels": [
+        "content",
+        "direct",
+        "search"
+      ],
+      "config": {
+        "collapseConsecutive": true,
+        "removalRule": "drop-to-null",
+        "silenceMinutes": 15
+      },
+      "convertedFrequency": 52,
+      "normalization": {
+        "contributions": {
+          "content": 0.3333333333333333,
+          "direct": 0.3333333333333333,
+          "search": 0.3333333333333333
+        },
+        "reason": null,
+        "totalEffect": 2.4761904761904763
+      },
+      "pathCount": 2,
+      "paths": [
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 52,
+          "outcome": "##CONVERT##"
+        },
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 11,
+          "outcome": "##NULL##"
+        }
+      ],
+      "removalEffects": {
+        "content": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "##START##": 1
+          }
+        },
+        "direct": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "search": 1
+          }
+        },
+        "search": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "content": 1
+          }
+        }
+      },
+      "totalFrequency": 63,
+      "transitionCounts": {
+        "##START##": {
+          "content": 63
+        },
+        "content": {
+          "search": 63
+        },
+        "direct": {
+          "##CONVERT##": 52,
+          "##NULL##": 11
+        },
+        "search": {
+          "direct": 63
+        }
+      },
+      "transitionMatrix": {
+        "##START##": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 1,
+          "direct": 0,
+          "search": 0
+        },
+        "content": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 1
+        },
+        "direct": {
+          "##CONVERT##": 0.8253968253968254,
+          "##NULL##": 0.1746031746031746,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 0
+        },
+        "search": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 1,
+          "search": 0
+        }
+      },
+      "warnings": []
+    },
+    {
+      "absorption": {
+        "byState": {
+          "##START##": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "content": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "direct": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "search": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          }
+        },
+        "churn": 0.1746031746031746,
+        "convert": 0.8253968253968254
+      },
+      "channels": [
+        "content",
+        "direct",
+        "search"
+      ],
+      "config": {
+        "collapseConsecutive": true,
+        "removalRule": "drop-to-null",
+        "silenceMinutes": 30
+      },
+      "convertedFrequency": 52,
+      "normalization": {
+        "contributions": {
+          "content": 0.3333333333333333,
+          "direct": 0.3333333333333333,
+          "search": 0.3333333333333333
+        },
+        "reason": null,
+        "totalEffect": 2.4761904761904763
+      },
+      "pathCount": 2,
+      "paths": [
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 52,
+          "outcome": "##CONVERT##"
+        },
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 11,
+          "outcome": "##NULL##"
+        }
+      ],
+      "removalEffects": {
+        "content": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "##START##": 1
+          }
+        },
+        "direct": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "search": 1
+          }
+        },
+        "search": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "content": 1
+          }
+        }
+      },
+      "totalFrequency": 63,
+      "transitionCounts": {
+        "##START##": {
+          "content": 63
+        },
+        "content": {
+          "search": 63
+        },
+        "direct": {
+          "##CONVERT##": 52,
+          "##NULL##": 11
+        },
+        "search": {
+          "direct": 63
+        }
+      },
+      "transitionMatrix": {
+        "##START##": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 1,
+          "direct": 0,
+          "search": 0
+        },
+        "content": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 1
+        },
+        "direct": {
+          "##CONVERT##": 0.8253968253968254,
+          "##NULL##": 0.1746031746031746,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 0
+        },
+        "search": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 1,
+          "search": 0
+        }
+      },
+      "warnings": []
+    },
+    {
+      "absorption": {
+        "byState": {
+          "##START##": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "content": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "direct": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          },
+          "search": {
+            "churn": 0.1746031746031746,
+            "convert": 0.8253968253968254
+          }
+        },
+        "churn": 0.1746031746031746,
+        "convert": 0.8253968253968254
+      },
+      "channels": [
+        "content",
+        "direct",
+        "search"
+      ],
+      "config": {
+        "collapseConsecutive": true,
+        "removalRule": "drop-to-null",
+        "silenceMinutes": 60
+      },
+      "convertedFrequency": 52,
+      "normalization": {
+        "contributions": {
+          "content": 0.3333333333333333,
+          "direct": 0.3333333333333333,
+          "search": 0.3333333333333333
+        },
+        "reason": null,
+        "totalEffect": 2.4761904761904763
+      },
+      "pathCount": 2,
+      "paths": [
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 52,
+          "outcome": "##CONVERT##"
+        },
+        {
+          "channels": [
+            "content",
+            "search",
+            "direct"
+          ],
+          "frequency": 11,
+          "outcome": "##NULL##"
+        }
+      ],
+      "removalEffects": {
+        "content": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "##START##": 1
+          }
+        },
+        "direct": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "search": 1
+          }
+        },
+        "search": {
+          "absorptionAfterRemoval": 0,
+          "effect": 0.8253968253968254,
+          "redirectedToNull": {
+            "content": 1
+          }
+        }
+      },
+      "totalFrequency": 63,
+      "transitionCounts": {
+        "##START##": {
+          "content": 63
+        },
+        "content": {
+          "search": 63
+        },
+        "direct": {
+          "##CONVERT##": 52,
+          "##NULL##": 11
+        },
+        "search": {
+          "direct": 63
+        }
+      },
+      "transitionMatrix": {
+        "##START##": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 1,
+          "direct": 0,
+          "search": 0
+        },
+        "content": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 1
+        },
+        "direct": {
+          "##CONVERT##": 0.8253968253968254,
+          "##NULL##": 0.1746031746031746,
+          "##START##": 0,
+          "content": 0,
+          "direct": 0,
+          "search": 0
+        },
+        "search": {
+          "##CONVERT##": 0,
+          "##NULL##": 0,
+          "##START##": 0,
+          "content": 0,
+          "direct": 1,
+          "search": 0
+        }
+      },
+      "warnings": []
+    }
+  ]
+}

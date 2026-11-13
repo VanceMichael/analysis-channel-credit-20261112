@@ -1,6 +1,8 @@
 {
   "silenceMinutes": 30,
+  "silenceWindows": [15, 30, 60],
   "collapseConsecutive": true,
   "removal": "drop-to-null",
+  "bootstrapIterations": 200,
   "seed": 81
 }

@@ -1,0 +1,26 @@
+{
+  "count": 96,
+  "groupBy": "channel",
+  "groups": [
+    {
+      "convertedTouches": 0,
+      "count": 32,
+      "key": "content",
+      "sum": 63
+    },
+    {
+      "convertedTouches": 21,
+      "count": 32,
+      "key": "direct",
+      "sum": 63
+    },
+    {
+      "convertedTouches": 0,
+      "count": 32,
+      "key": "search",
+      "sum": 63
+    }
+  ],
+  "inputFingerprint": "16c14a9ef6b495c048a9d8851478629dfa514c29fdebfb709c11e17aaca560eb",
+  "valueField": "weight"
+}

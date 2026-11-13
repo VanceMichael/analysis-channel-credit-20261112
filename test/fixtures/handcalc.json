@@ -1,0 +1,19 @@
+{
+  "description": "可手算吸收概率的三渠道例子：A、B 为入口渠道，C 只作为第二触点；路径频次 6/4/5/5，总频次 20，每条路径属于独立 user",
+  "records": [
+    { "id": "h1", "user": "u1", "session": "s1", "minute": 0, "channel": "A", "converted": false, "weight": 6 },
+    { "id": "h2", "user": "u1", "session": "s1", "minute": 5, "channel": "C", "converted": true,  "weight": 6 },
+
+    { "id": "h3", "user": "u2", "session": "s2", "minute": 0, "channel": "A", "converted": false, "weight": 4 },
+    { "id": "h4", "user": "u2", "session": "s2", "minute": 5, "channel": "C", "converted": false, "weight": 4 },
+
+    { "id": "h5", "user": "u3", "session": "s3", "minute": 0, "channel": "B", "converted": true,  "weight": 5 },
+
+    { "id": "h6", "user": "u4", "session": "s4", "minute": 0, "channel": "B", "converted": false, "weight": 5 }
+  ],
+  "expected": {
+    "baselineConvert": "0.55",
+    "effects": { "A": "0.3", "B": "0.25", "C": "0.3" },
+    "shares": { "A": "6/17", "B": "5/17", "C": "6/17" }
+  }
+}

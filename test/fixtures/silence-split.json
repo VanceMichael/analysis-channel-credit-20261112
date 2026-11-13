@@ -1,0 +1,7 @@
+{
+  "description": "静默窗口切分：同一 session 内间隔 20 分钟，窗口 15 切成两条流失+转化路径，窗口 30 保持一条转化路径",
+  "records": [
+    { "id": "w1", "user": "u1", "session": "s1", "minute": 0,  "channel": "A", "converted": false, "weight": 1 },
+    { "id": "w2", "user": "u1", "session": "s1", "minute": 20, "channel": "B", "converted": true,  "weight": 1 }
+  ]
+}

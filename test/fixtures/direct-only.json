@@ -1,0 +1,12 @@
+{
+  "description": "仅直接访问：单渠道 D，两条路径一转化一流失",
+  "records": [
+    { "id": "d1", "user": "u1", "session": "s1", "minute": 0, "channel": "D", "converted": true,  "weight": 2 },
+    { "id": "d2", "user": "u2", "session": "s2", "minute": 0, "channel": "D", "converted": false, "weight": 2 }
+  ],
+  "expected": {
+    "baselineConvert": "0.5",
+    "effects": { "D": "0.5" },
+    "shares": { "D": "1" }
+  }
+}

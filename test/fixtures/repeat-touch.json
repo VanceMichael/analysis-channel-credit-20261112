@@ -1,0 +1,18 @@
+{
+  "description": "重复触点：连续同渠道折叠（A,A->A），非连续回访保留（A,B,A）；两条路径频次相同，分属独立 user",
+  "records": [
+    { "id": "r1", "user": "u1", "session": "s1", "minute": 0,  "channel": "A", "converted": false, "weight": 2 },
+    { "id": "r2", "user": "u1", "session": "s1", "minute": 5,  "channel": "A", "converted": false, "weight": 2 },
+    { "id": "r3", "user": "u1", "session": "s1", "minute": 10, "channel": "B", "converted": true,  "weight": 2 },
+
+    { "id": "r4", "user": "u2", "session": "s2", "minute": 0,  "channel": "A", "converted": false, "weight": 2 },
+    { "id": "r5", "user": "u2", "session": "s2", "minute": 5,  "channel": "B", "converted": false, "weight": 2 },
+    { "id": "r6", "user": "u2", "session": "s2", "minute": 10, "channel": "A", "converted": true,  "weight": 2 }
+  ],
+  "expected": {
+    "collapsedPaths": [["A", "B"], ["A", "B", "A"]],
+    "baselineConvert": "1",
+    "effects": { "A": "1", "B": "2/3" },
+    "shares": { "A": "3/5", "B": "2/5" }
+  }
+}

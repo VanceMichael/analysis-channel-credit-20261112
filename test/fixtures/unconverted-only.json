@@ -1,0 +1,14 @@
+{
+  "description": "只有未转化记录：全部路径进入流失吸收态，移除效应全为零，拒绝伪造归一比例",
+  "records": [
+    { "id": "n1", "user": "u1", "session": "s1", "minute": 0, "channel": "A", "converted": false, "weight": 3 },
+    { "id": "n2", "user": "u1", "session": "s1", "minute": 5, "channel": "B", "converted": false, "weight": 3 },
+    { "id": "n3", "user": "u2", "session": "s2", "minute": 0, "channel": "C", "converted": false, "weight": 1 }
+  ],
+  "expected": {
+    "baselineConvert": "0",
+    "baselineChurn": "1",
+    "reason": "all-zero-effects",
+    "contributions": null
+  }
+}

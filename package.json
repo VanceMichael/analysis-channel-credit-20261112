@@ -8,8 +8,9 @@
   },
   "scripts": {
     "test": "node --test",
-    "build": "node --check src/cli.js && node --check src/domain.js && node --check src/dataset.js && node --check src/output.js",
+    "build": "node --check src/cli.js && node --check src/domain.js && node --check src/dataset.js && node --check src/output.js && node --check src/policy.js && node --check src/markov.js && node --check src/resample.js && node --check src/attribution.js && node --check src/report.js",
     "summary": "node src/cli.js summary",
+    "attribution": "node src/cli.js attribution --out var/attribution.json --report var/attribution.md",
     "demo": "node scripts/demo.js"
   }
 }
